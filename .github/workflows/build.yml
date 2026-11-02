@@ -54,7 +54,7 @@ jobs:
               pkg update -y
 
               echo "Installing Python versions..."
-              pkg install -y \
+              apt install -y \
                 python3.10 \
                 python3.13 \
                 python3.14
