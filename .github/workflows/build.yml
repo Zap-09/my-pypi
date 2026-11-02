@@ -16,7 +16,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.10", "3.13", "3.14"]
+        python-version: ["3.10", "3.13"]
 
     steps:
       - name: Enable ARM64 emulation
@@ -57,7 +57,6 @@ jobs:
               apt install -y \
                 python3.10 \
                 python3.13 \
-                python3.14
 
               echo "Installing build tools..."
               pkg install -y \
